@@ -2,12 +2,16 @@ defmodule Pixie.Redis.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :pixie_redis,
-     version: "0.1.0",
-     elixir: "~> 1.3",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     deps: deps()]
+    [
+      app: :pixie_redis,
+      version: "0.1.0",
+      elixir: "~> 1.3",
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
+      deps: deps,
+      package: package,
+      description: description
+    ]
   end
 
   # Configuration for the OTP application
@@ -16,6 +20,23 @@ defmodule Pixie.Redis.Mixfile do
   def application do
     [applications: [:logger, :poolboy, :exredis],
      mod: {Pixie.Redis, []}]
+  end
+
+  defp package do
+    [
+      maintainers: ["James Harton"],
+      licenses: ["MIT"],
+      links: %{
+        "messagerocket" => "https://messagerocket.co",
+        "github"        => "https://github.com/messagerocket/pixie_redis"
+      }
+    ]
+  end
+
+  defp description do
+    """
+    Redis storage backend for Pixie, Elixir's Bayeux server.
+    """
   end
 
   # Dependencies can be Hex packages:
