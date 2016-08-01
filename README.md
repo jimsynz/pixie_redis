@@ -22,3 +22,13 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
     end
     ```
 
+## Configuration
+
+Pixie's Redis connection is configured using the following values in your project's `config.exs`:
+
+```elixir
+config :pixie_redis,
+  redis_url: redis://localhost:6379/0,
+  pool_size: 10,
+  pool_max_overflow: 1
+```
