@@ -28,7 +28,7 @@ Pixie's Redis connection is configured using the following values in your projec
 
 ```elixir
 config :pixie_redis,
-  redis_url: redis://localhost:6379/0,
+  redis_url: "redis://localhost:6379/0",
   pool_size: 10,
   pool_max_overflow: 1
 ```
