@@ -1,3 +1,9 @@
-%{"eredis": {:hex, :eredis, "1.0.8", "ab4fda1c4ba7fbe6c19c26c249dc13da916d762502c4b4fa2df401a8d51c5364", [:rebar], []},
+%{"dogma": {:hex, :dogma, "0.1.7", "927f76a89a809db96e0983b922fc899f601352690aefa123529b8aa0c45123b2", [:mix], [{:poison, ">= 1.0.0", [hex: :poison, optional: false]}]},
+  "eredis": {:hex, :eredis, "1.0.8", "ab4fda1c4ba7fbe6c19c26c249dc13da916d762502c4b4fa2df401a8d51c5364", [:rebar], []},
+  "ex_brace_expansion": {:hex, :ex_brace_expansion, "0.0.2", "7574fd9497f3f045346dfd9517f10f237f4d39137bf42142b0fbdcd4bacbc6ed", [:mix], []},
+  "ex_doc": {:hex, :ex_doc, "0.11.5", "0dc51cb84f8312162a2313d6c71573a9afa332333d8a332bb12540861b9834db", [:mix], [{:earmark, "~> 0.1.17 or ~> 0.2", [hex: :earmark, optional: true]}]},
+  "ex_minimatch": {:hex, :ex_minimatch, "0.0.1", "4b41726183c104ac227c5996f083ec370f97bd38c2232d74a847888c1bb715bc", [:mix], [{:ex_brace_expansion, "~> 0.0.1", [hex: :ex_brace_expansion, optional: false]}]},
   "exredis": {:hex, :exredis, "0.2.5", "34d02fa9ef32174cbd790b166746f91b3dbc131ce37a2d9a2451e8bba164b423", [:mix], [{:eredis, ">= 1.0.8", [hex: :eredis, optional: false]}]},
-  "poolboy": {:hex, :poolboy, "1.5.1", "6b46163901cfd0a1b43d692657ed9d7e599853b3b21b95ae5ae0a777cf9b6ca8", [:rebar], []}}
+  "poison": {:hex, :poison, "2.2.0", "4763b69a8a77bd77d26f477d196428b741261a761257ff1cf92753a0d4d24a63", [:mix], []},
+  "poolboy": {:hex, :poolboy, "1.5.1", "6b46163901cfd0a1b43d692657ed9d7e599853b3b21b95ae5ae0a777cf9b6ca8", [:rebar], []},
+  "u_token": {:hex, :u_token, "0.0.2", "7c2ecb0e669021b954b33e6ef9ea7ad2c7242134bbb2a07d8491e3d4457b0227", [:mix], [{:ex_doc, "~> 0.11.5", [hex: :ex_doc, optional: true]}]}}

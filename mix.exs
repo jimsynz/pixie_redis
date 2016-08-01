@@ -29,8 +29,12 @@ defmodule Pixie.Redis.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:poolboy, "~> 1.5"},
-      {:exredis, "~> 0.2"}
+      {:u_token,      "~> 0.0.2"},
+      {:poolboy,      "~> 1.5"},
+      {:ex_minimatch, "~> 0.0.1"},
+      {:exredis,      "~> 0.2"},
+      {:dogma,        "~> 0.1.7", only: :dev},
+      {:ex_doc,       ">= 0.0.0", only: :dev}
     ]
   end
 end
