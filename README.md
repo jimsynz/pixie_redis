@@ -1,6 +1,6 @@
 # Pixie.Redis
 
-**TODO: Add description**
+Redis storage backend for [Pixie](https://github.com/messagerocket/pixie).
 
 ## Installation
 
